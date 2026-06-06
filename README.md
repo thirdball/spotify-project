@@ -39,20 +39,20 @@ successfully matched.
 
 Here is the head of the cleaned DataFrame:
 
-<iframe src="https://thirdball.github.io/spotify-project/assets/df_head.html" width="100%" height="250px" frameborder="0"></iframe>
+<iframe src="assets/df_head.html" width="100%" height="250px" frameborder="0"></iframe>
 
 ---
 
 ### Univariate Analysis
 
-<iframe src="https://thirdball.github.io/spotify-project/assets/popularity_distribution.html" width="100%" height="500px" frameborder="0"></iframe>
+<iframe src="assets/popularity_distribution.html" width="100%" height="500px" frameborder="0"></iframe>
 
 The distribution of song popularity is heavily right-skewed, with the 
 majority of songs scoring between 0-20. This suggests that achieving 
 widespread popularity on Spotify is rare, with only a small fraction 
 of songs reaching high popularity scores.
 
-<iframe src="https://thirdball.github.io/spotify-project/assets/danceability_distribution.html" width="100%" height="500px" frameborder="0"></iframe>
+<iframe src="assets/danceability_distribution.html" width="100%" height="500px" frameborder="0"></iframe>
 
 Danceability scores follow a roughly normal distribution centered around 
 0.5-0.6, suggesting most songs have moderate danceability. The relatively 
@@ -63,13 +63,13 @@ low and high danceability tracks.
 
 ### Bivariate Analysis
 
-<iframe src="https://thirdball.github.io/spotify-project/assets/popularity_by_explicit.html" width="100%" height="500px" frameborder="0"></iframe>
+<iframe src="assets/popularity_by_explicit.html" width="100%" height="500px" frameborder="0"></iframe>
 
 Explicit songs tend to have a slightly higher median popularity than 
 non-explicit songs. This trend motivated our hypothesis test in Step 4, 
 where we formally tested whether this difference is statistically significant.
 
-<iframe src="https://thirdball.github.io/spotify-project/assets/popularity_vs_artist.html" width="100%" height="500px" frameborder="0"></iframe>
+<iframe src="assets/popularity_vs_artist.html" width="100%" height="500px" frameborder="0"></iframe>
 
 There is a clear positive relationship between artist popularity and song 
 popularity, suggesting that more popular artists tend to release more 
@@ -85,7 +85,7 @@ for the top 10 genres. Pop and hip-hop genres dominate in popularity
 while also showing higher danceability scores, suggesting that 
 commercially successful genres share common audio characteristics.
 
-<iframe src="https://thirdball.github.io/spotify-project/assets/genre_stats.html" width="100%" height="400px" frameborder="0"></iframe>
+<iframe src="assets/genre_stats.html" width="100%" height="400px" frameborder="0"></iframe>
 
 ---
 
@@ -124,7 +124,7 @@ depend on popularity
 - P-value: < 0.001
 - Conclusion: Reject null - tempo missingness **does** depend on danceability
 
-<iframe src="https://thirdball.github.io/spotify-project/assets/missingness_plot.html" width="100%" height="500px" frameborder="0"></iframe>
+<iframe src="assets/missingness_plot.html" width="100%" height="500px" frameborder="0"></iframe>
 
 The plot shows that songs with tempo recorded (not missing) have a more 
 concentrated danceability distribution (0.4-0.7), while songs with missing 
@@ -300,7 +300,7 @@ compared to non-explicit songs (RMSE = 16.37). This is likely due to
 class imbalance - explicit songs make up only 8.3% of the test set, 
 so the model learned patterns from non-explicit songs much better.
 
-<iframe src="https://thirdball.github.io/spotify-project/assets/fairness_plot.html" width="100%" height="500px" frameborder="0"></iframe>
+<iframe src="assets/fairness_plot.html" width="100%" height="500px" frameborder="0"></iframe>
 
 The plot shows the null distribution of RMSE differences from 500 
 permutations. The observed difference of 2.2153 (red line) falls far 
